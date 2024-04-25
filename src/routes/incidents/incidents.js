@@ -1,14 +1,8 @@
 import incidentsActions from '../../actions/incidents/incidents'
 import {body} from "koa/lib/response";
 
-/*
-*"event_id": "abcde1234567",
-"context": "car_plate",
-"metadata": "HGNV12"
-"timestamp": 1713590588101
-*/
-
 exports.addEvent = (ctx) =>{
+    console.log(a)
     let evento = ctx.request.body
 
     if(!evento.event_id || !evento.context || !evento.metadata || !evento.timestamp){
